@@ -13,6 +13,10 @@ When running multiple OpenClaw agents across different platforms (Feishu, Discor
 - **Auto Refresh** — Configurable refresh interval (manual, 10s, 30s, 1min, 5min, 10min)
 - **Live Config** — Reads directly from `~/.openclaw/openclaw.json`, no manual sync needed
 
+## Preview
+
+![Dashboard Preview](docs/dashboard-preview.jpg)
+
 ## Getting Started
 
 ```bash
