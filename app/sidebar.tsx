@@ -126,7 +126,7 @@ export function Sidebar() {
               <button
                 onClick={() => setCollapsed(false)}
                 className="text-[var(--text-muted)] hover:text-[var(--text)] transition-colors text-lg"
-                title="展开侧边栏"
+                title={t("nav.expandSidebar")}
               >
                 »
               </button>
@@ -154,7 +154,7 @@ export function Sidebar() {
                 <button
                   onClick={() => setCollapsed(true)}
                   className="text-[var(--text-muted)] hover:text-[var(--text)] transition-colors text-lg"
-                  title="收起侧边栏"
+                  title={t("nav.collapseSidebar")}
                 >
                   «
                 </button>
@@ -217,7 +217,7 @@ export function Sidebar() {
                 >
                   <span className="flex items-center gap-2">
                     <span className="text-sm">🧪</span>
-                    <span className="text-sm font-semibold tracking-wide">实验功能</span>
+                    <span className="text-sm font-semibold tracking-wide">{t("nav.experiments")}</span>
                   </span>
                   <span
                     className={`inline-flex items-center justify-center text-base leading-none transition-transform ${
@@ -237,10 +237,10 @@ export function Sidebar() {
                           : "bg-[var(--card)] border-[var(--border)] text-[var(--text-muted)]"
                       }`}
                     >
-                      {bugsEnabled ? "🐛 Bugs On" : "🐛 Bugs Off"}
+                      {bugsEnabled ? `🐛 ${t("nav.bugsOn")}` : `🐛 ${t("nav.bugsOff")}`}
                     </button>
                     <label className="flex items-center justify-between gap-2 px-2 py-1.5 text-xs rounded-lg border bg-[var(--card)] border-[var(--border)] text-[var(--text-muted)]">
-                      <span>Count {bugsCount}</span>
+                      <span>{t("nav.bugsCount")} {bugsCount}</span>
                       <input
                         type="range"
                         min={0}
@@ -258,7 +258,7 @@ export function Sidebar() {
             {collapsed && (
               <button
                 onClick={() => setCollapsed(false)}
-                title="实验功能"
+                title={t("nav.experiments")}
                 className="w-full flex items-center justify-center rounded-lg px-2 py-2 text-base border border-[var(--border)] bg-[var(--card)]/65 text-[var(--text)] hover:bg-[var(--bg)] transition-colors"
               >
                 🧪

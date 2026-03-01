@@ -21,6 +21,12 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.config": "配置",
     "nav.skills": "技能管理",
     "nav.alerts": "告警中心",
+    "nav.experiments": "实验功能",
+    "nav.expandSidebar": "展开侧边栏",
+    "nav.collapseSidebar": "收起侧边栏",
+    "nav.bugsOn": "Bugs On",
+    "nav.bugsOff": "Bugs Off",
+    "nav.bugsCount": "数量",
 
     // alerts page
     "alerts.title": "告警中心",
@@ -253,6 +259,12 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.config": "Config",
     "nav.skills": "Skills",
     "nav.alerts": "Alerts",
+    "nav.experiments": "Experiments",
+    "nav.expandSidebar": "Expand sidebar",
+    "nav.collapseSidebar": "Collapse sidebar",
+    "nav.bugsOn": "Bugs On",
+    "nav.bugsOff": "Bugs Off",
+    "nav.bugsCount": "Count",
 
     // alerts page
     "alerts.title": "Alert Center",
